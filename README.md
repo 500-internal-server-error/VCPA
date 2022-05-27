@@ -1,6 +1,6 @@
 # VCPA
 
-`VCPA` is a Discord bot that records voice call participants' attendance.
+`VCPA` is a Discord bot that records voice call participants' attendance. _This project intends to be a genericized version of [this project](https://github.com/binusgdc/VCPA)._
 
 ## Quick Start
 
