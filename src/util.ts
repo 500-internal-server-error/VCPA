@@ -103,10 +103,9 @@ export function generateSessionOutput(session : Session) : SessionOutput {
 		.setTitle("Session Stats")
 		.addFields(
 			{ name: "Date", value: formatDate(session.startTime, "DATE") },
-			{ name: "Tutor ID", value: `${session.owner}` },
+			{ name: "Session Owner ID", value: `${session.owner}` },
 			{ name: "Start Time", value: formatDate(session.startTime, "TME") },
-			{ name: "Duration (minutes)", value: formatPeriod(sessionDuration, "MINUTES") },
-			{ name: "Attendance Form", value: "[Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdGjYqEQS9R4xK95_rwQHT-idPE0SBmbpD6g6ChBX4WFV_dCg/viewform?usp=sf_link)" }
+			{ name: "Duration (minutes)", value: formatPeriod(sessionDuration, "MINUTES") }
 		);
 
 	/* Return the generated outputs */
