@@ -92,7 +92,7 @@ export function generateSessionOutput(session : Session) : SessionOutput {
 	attendees.forEach((attendee) => {
 		procdet += `${attendee.id}` + ',';
 		procdet += (attendee.duration / sessionDuration) + ',';
-		procdet += (((attendee.duration / sessionDuration) > 0.8) ? "Hadir" : "Absen") + ',';
+		procdet += (((attendee.duration / sessionDuration) > 0.8) ? "Present" : "Absent") + ',';
 		procdet += formatPeriod(attendee.duration, "MINUTES") + '\n';
 	});
 
